@@ -6,14 +6,14 @@ function AddTodo({ onAdd }) {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const response = await axios.post('http://localhost:8000/api/todos/', {
-            title,
-            completed: false
-        });
-        // const response = await axios.post('https://todo-backend-yi3f.onrender.com/api/todos/', {
+        // const response = await axios.post('http://localhost:8000/api/todos/', {
         //     title,
         //     completed: false
         // });
+        const response = await axios.post('https://https://b-backend-id2l.onrender.com/api/todos/', {
+            title,
+            completed: false
+        });
         onAdd(response.data);
         setTitle('');
     };
