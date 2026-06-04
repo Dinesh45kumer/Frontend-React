@@ -10,7 +10,7 @@ function AddTodo({ onAdd }) {
         //     title,
         //     completed: false
         // });
-        const response = await axios.post('https://https://b-backend-id2l.onrender.com/api/todos/', {
+        const response = await axios.post('https://b-backend-id2l.onrender.com/api/todos/', {
             title,
             completed: false
         });
