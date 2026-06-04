@@ -6,16 +6,16 @@ function TodoList({ todos, setTodos }) {
  // await axios.delete(`http://localhost:8000/api/todos/${id}/`);
  //        setTodos(todos.filter(todo => todo.id !== id));
 
-        await axios.delete(`https://https://b-backend-id2l.onrender.com/api/todos/${id}/`);
+        await axios.delete(`https://b-backend-id2l.onrender.com/api/todos/${id}/`);
         setTodos(todos.filter(todo => todo.id !== id));
     };
 
     const toggleComplete = async (todo) => {
 
-        const response = await axios.put(`http://localhost:8000/api/todos/${todo.id}/`, {
+        // const response = await axios.put(`http://localhost:8000/api/todos/${todo.id}/`, {
 
 
-        // const response = await axios.put(`https://todo-backend-yi3f.onrender.com/api/todos/${todo.id}/`, {
+        const response = await axios.put("https://b-backend-id2l.onrender.com/api/todos/${todo.id}/`, {
             ...todo,
             completed: !todo.completed
         });
