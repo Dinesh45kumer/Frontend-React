@@ -15,7 +15,7 @@ function TodoList({ todos, setTodos }) {
         // const response = await axios.put(`http://localhost:8000/api/todos/${todo.id}/`, {
 
 
-        const response = await axios.put("https://b-backend-id2l.onrender.com/api/todos/${todo.id}/`, {
+        const response = await axios.put(`https://b-backend-id2l.onrender.com/api/todos/${todo.id}/`, {
             ...todo,
             completed: !todo.completed
         });
