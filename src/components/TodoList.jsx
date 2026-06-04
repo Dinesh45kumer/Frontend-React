@@ -3,11 +3,11 @@ import axios from 'axios';
 
 function TodoList({ todos, setTodos }) {
     const handleDelete = async (id) => {
- await axios.delete(`http://localhost:8000/api/todos/${id}/`);
-        setTodos(todos.filter(todo => todo.id !== id));
+ // await axios.delete(`http://localhost:8000/api/todos/${id}/`);
+ //        setTodos(todos.filter(todo => todo.id !== id));
 
-        // await axios.delete(`https://todo-backend-yi3f.onrender.com/api/todos/${id}/`);
-        // setTodos(todos.filter(todo => todo.id !== id));
+        await axios.delete(`https://https://b-backend-id2l.onrender.com/api/todos/${id}/`);
+        setTodos(todos.filter(todo => todo.id !== id));
     };
 
     const toggleComplete = async (todo) => {
