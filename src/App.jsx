@@ -9,7 +9,7 @@ function App() {
     useEffect(() => {
         //axios.get('http://localhost:8000/api/todos/')
         // // Example with Axios
-axios.get("https://https://b-backend-id2l.onrender.com/api/todos/")
+axios.get("https://b-backend-id2l.onrender.com/api/todos/")
 
             .then(res => setTodos(res.data));
     }, []);
