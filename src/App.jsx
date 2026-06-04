@@ -7,9 +7,9 @@ function App() {
     const [todos, setTodos] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:8000/api/todos/')
+        //axios.get('http://localhost:8000/api/todos/')
         // // Example with Axios
-// axios.get("https://todo-backend-yi3f.onrender.com/api/todos/")
+axios.get("https://https://b-backend-id2l.onrender.com/api/todos/")
 
             .then(res => setTodos(res.data));
     }, []);
